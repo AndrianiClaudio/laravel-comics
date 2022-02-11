@@ -13,6 +13,8 @@
 <body>
   {{-- header --}}
   @include('guest.partials.header')
+  {{-- jumbo --}}
+  @include('guest.partials.jumbo')
   {{-- content --}}
   @yield('main_content')
   @yield('sub_content')

@@ -106,6 +106,13 @@ header.header .header-bottom .main-container .navbar .input-search .absolute-len
   transform: translateY(-50%);
 }
 
+.jumbo {
+  height: 500px;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 div.cards {
   background-color: #1c1c1c;
   padding: 2rem;
