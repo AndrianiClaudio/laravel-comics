@@ -33,7 +33,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('fans')}}">
+              <a href="{{route('videos')}}">
                 Videos
               </a>
             </li>

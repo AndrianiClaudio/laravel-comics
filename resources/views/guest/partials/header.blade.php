@@ -37,6 +37,11 @@
                 tv
               </a>
             </li>
+            <li class="{{'games' === Route::currentRouteName() ? 'active' : ''}}">
+              <a href="{{route('games')}}">
+                games
+              </a>
+            </li>
             <li class="{{'collectibles' === route::currentRouteName() ? 'active' : ''}}">
               <a href="{{route('collectibles')}}">
                 collectibles

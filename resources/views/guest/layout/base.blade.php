@@ -14,7 +14,8 @@
   {{-- header --}}
   @include('guest.partials.header')
   {{-- content --}}
-  @yield('content')
+  @yield('main_content')
+  @yield('sub_content')
   {{-- footer --}}
   @include('guest.partials.footer')
 </body>

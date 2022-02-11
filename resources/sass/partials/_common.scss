@@ -14,7 +14,7 @@ a,
 a:hover,
 a:active,
 a:focus {
-  color: black;
+  color: $dark_color;
   text-decoration: none;
 }
 ul {
@@ -23,4 +23,7 @@ ul {
 .main-container {
   width: 70%;
   margin: 0 auto;
+}
+.container {
+  width: 100%;
 }

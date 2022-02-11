@@ -3,45 +3,45 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home',['data' => config('comics')]);
+    return view('guest.home',['data' => config('comics')]);
 })-> name('home');
 
 Route::get('/characters', function () {
-    return view('characters');
+    return view('guest.characters');
 })-> name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    return view('guest.comics');
 })-> name('comics');
 
 Route::get('/movies', function () {
-    return view('movies');
+    return view('guest.movies');
 })-> name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    return view('guest.tv');
 })-> name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    return view('guest.games');
 })-> name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return view('guest.collectibles');
 })-> name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return view('guest.videos');
 })-> name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    return view('guest.fans');
 })-> name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    return view('guest.news');
 })-> name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    return view('guest.shop');
 })-> name('shop');

@@ -15,7 +15,7 @@ a,
 a:hover,
 a:active,
 a:focus {
-  color: black;
+  color: #1c1c1c;
   text-decoration: none;
 }
 
@@ -26,6 +26,10 @@ ul {
 .main-container {
   width: 70%;
   margin: 0 auto;
+}
+
+.container {
+  width: 100%;
 }
 
 header.header {
@@ -45,7 +49,6 @@ header.header .header-top .main-container {
 header.header .header-bottom {
   display: flex;
   height: 100px;
-  background-color: white;
 }
 
 header.header .header-bottom .logo {
@@ -77,7 +80,7 @@ header.header .header-bottom .main-container .navbar .input-search {
   display: flex;
   align-items: center;
   position: relative;
-  color: black;
+  color: #1c1c1c;
 }
 
 header.header .header-bottom .main-container .navbar .input-search input {
@@ -100,13 +103,20 @@ header.header .header-bottom .main-container .navbar .input-search .absolute-len
 }
 
 div.cards {
+  background-color: #1c1c1c;
+  justify-content: center;
+}
+
+div.cards .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2.5rem 0;
   gap: 1rem;
 }
 
-div.cards ul.card {
+div.cards .container ul.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,12 +125,55 @@ div.cards ul.card {
   flex-basis: calc(16.6666666667% - 1rem);
 }
 
-div.cards ul.card li img {
+div.cards .container ul.card li img {
   height: 200px;
   width: 200px;
 }
 
-div.cards ul.card li h2 {
+div.cards .container ul.card li h2 {
   text-align: center;
+}
+
+div.cards .container button.btn {
+  margin: 0 auto;
+  background-color: #0282f9;
+  color: white;
+  padding: 0.5rem 1.75rem;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+}
+
+.container-blue {
+  background-color: #0282f9;
+  padding: 2.5rem 0;
+}
+
+.container-blue .container {
+  width: 60%;
+}
+
+footer.footer .footer-main {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer.footer .footer-main .container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer.footer .footer-main .container .col section h2 {
+  color: white;
+}
+
+footer.footer .footer-main .container .col section ul li a {
+  color: #3e4041;
 }
 
