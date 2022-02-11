@@ -26,6 +26,11 @@ header.header {
           display: flex;
           gap: 1.25rem;
           text-transform: uppercase;
+          li {
+            &.active {
+              background-color: red;
+            }
+          }
         }
         input {
           padding-left: 55px;

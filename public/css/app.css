@@ -62,6 +62,10 @@ header.header .header-bottom .main-container .navbar ul {
   text-transform: uppercase;
 }
 
+header.header .header-bottom .main-container .navbar ul li.active {
+  background-color: red;
+}
+
 header.header .header-bottom .main-container .navbar input {
   padding-left: 55px;
   margin-left: 2rem;
