@@ -4,9 +4,42 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+.main-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 header.header {
-  height: 80px;
+  height: 120px;
   background-color: red;
+}
+
+header.header .header-top {
+  background-color: #0282f9;
+}
+
+header.header .header-top .main-container {
+  text-align: right;
+}
+
+header.header .header-bottom {
+  background-color: white;
+}
+
+header.header .header-bottom .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.header .header-bottom .main-container ul {
+  display: flex;
+  gap: 1.25rem;
+  text-transform: uppercase;
 }
 
 div.cards {
@@ -22,7 +55,7 @@ div.cards ul.card {
   align-items: center;
   min-width: 200px;
   list-style: none;
-  flex-basis: 16.6666666667%;
+  flex-basis: calc(16.6666666667% - 1rem);
 }
 
 div.cards ul.card li img {

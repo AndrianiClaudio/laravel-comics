@@ -1,4 +1,23 @@
 header.header {
   height: $header_height;
   background-color: red;
+  .header-top {
+    background-color: $header-top-bg-color;
+    .main-container {
+      text-align: right;
+    }
+  }
+  .header-bottom {
+    background-color: $header-bottom-bg-color;
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        gap: 1.25rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
