@@ -9,7 +9,10 @@ html {
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-
+body {
+  // possibile gestione futura media screen
+  min-width: 1100px;
+}
 a,
 a:hover,
 a:active,

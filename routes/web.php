@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('guest.home',['data' => config('comics')]);
 })-> name('home');
 
+// rotte navbar
 Route::get('/characters', function () {
     return view('guest.characters');
 })-> name('characters');
@@ -45,3 +46,4 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('guest.shop');
 })-> name('shop');
+// fine rotte navbar

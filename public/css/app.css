@@ -11,6 +11,10 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  min-width: 1100px;
+}
+
 a,
 a:hover,
 a:active,
@@ -104,10 +108,11 @@ header.header .header-bottom .main-container .navbar .input-search .absolute-len
 
 div.cards {
   background-color: #1c1c1c;
-  justify-content: center;
+  padding: 2rem;
 }
 
 div.cards .container {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -134,7 +139,8 @@ div.cards .container ul.card li h2 {
   text-align: center;
 }
 
-div.cards .container button.btn {
+div.cards button.btn {
+  display: block;
   margin: 0 auto;
   background-color: #0282f9;
   color: white;
@@ -166,14 +172,60 @@ footer.footer .footer-main .container {
   background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+}
+
+footer.footer .footer-main .container .col {
+  padding: 1.5rem;
+}
+
+footer.footer .footer-main .container .col section {
+  padding-right: 1rem;
 }
 
 footer.footer .footer-main .container .col section h2 {
   color: white;
+  padding-bottom: 0.6rem;
 }
 
 footer.footer .footer-main .container .col section ul li a {
-  color: #3e4041;
+  color: #5e5e5ebd;
+}
+
+footer.footer .footer-bar {
+  background-color: #1c1c1c;
+  padding: 2rem;
+}
+
+footer.footer .footer-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer.footer .footer-bar .container button {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  background-color: #1c1c1c;
+  border: 3px solid #0282f9;
+  text-transform: uppercase;
+  outline: 0;
+  color: white;
+}
+
+footer.footer .footer-bar .container ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer.footer .footer-bar .container ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+footer.footer .footer-bar .container ul li a.blue-color {
+  color: #0282f9;
 }
 

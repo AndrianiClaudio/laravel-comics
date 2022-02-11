@@ -1,5 +1,5 @@
 <footer class="footer">
-  <footer class="footer-main">
+  <div class="footer-main">
     <div class="container">
       {{-- colonna dc comics/shop --}}
       <div class="col">
@@ -122,5 +122,40 @@
         </section>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="footer-bar">
+    <div class="container">
+      <button>SIGN-UP NOW!</button>
+      <ul>
+        <li>
+          <a href="#" class="blue-color">FOLLOW US</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="{{asset('img/footer-facebook.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="{{asset('img/footer-twitter.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="{{asset('img/footer-youtube.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="{{asset('img/footer-pinterest.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="{{asset('img/footer-periscope.png')}}" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </footer>

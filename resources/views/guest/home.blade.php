@@ -23,8 +23,8 @@
           </li>
         </ul>
       @endforeach
-      <button class="btn">LOAD MORE</button>
     </div>
+    <button class="btn">LOAD MORE</button>
   </div>
 @endsection
 @section('sub_content')
