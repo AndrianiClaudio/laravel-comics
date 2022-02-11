@@ -2,21 +2,36 @@ header.header {
   height: $header_height;
   background-color: red;
   .header-top {
-    background-color: $header-top-bg-color;
+    height: calc($header_height - $header_bottom_height);
+    background-color: $header_top_bg_color;
     .main-container {
       text-align: right;
     }
   }
   .header-bottom {
-    background-color: $header-bottom-bg-color;
+    display: flex;
+    height: $header_bottom_height;
+    background-color: $header_bottom_bg_color;
+    .logo {
+      height: $logo_height;
+    }
     .main-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      ul {
+      .navbar {
         display: flex;
-        gap: 1.25rem;
-        text-transform: uppercase;
+        height: 1rem;
+        ul {
+          display: flex;
+          gap: 1.25rem;
+          text-transform: uppercase;
+        }
+        input {
+          padding-left: 55px;
+          margin-left: 2rem;
+          width: 140px;
+        }
       }
     }
   }

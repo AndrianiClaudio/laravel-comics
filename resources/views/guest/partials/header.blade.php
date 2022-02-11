@@ -10,54 +10,56 @@
   <div class="header-bottom">
     <div class="main-container">
       {{-- logo --}}
-      <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC">
-      {{-- menu di navigazione --}}
-      <nav>
-        <ul>
-          <li>
-            <a href="{{route('characters')}}">
-              Characters
-            </a>
-          </li>
-          <li>
-            <a href="{{route('comics')}}">
-              comics
-            </a>
-          </li>
-          <li>
-            <a href="{{route('movies')}}">
-              movies
-            </a>
-          </li>
-          <li>
-            <a href="{{route('tv')}}">
-              tv
-            </a>
-          </li>
-          <li>
-            <a href="{{route('collectibles')}}">
-              collectibles
-            </a>
-          </li>
-          <li>
-            <a href="{{route('fans')}}">
-              fans
-            </a>
-          </li>
-          <li>
-            <a href="{{route('news')}}">
-              news
-            </a>
-          </li>
-          <li>
-            <a href="{{route('shop')}}">
-              shop
-            </a>
-          </li>
-        </ul>
-      </nav>
-      {{-- input search --}}
-      <input type="text" name="input-search" id="input-search" placeholder="Search">
+      <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
+      <div class="navbar">
+        {{-- menu di navigazione --}}
+        <nav>
+          <ul>
+            <li>
+              <a href="{{route('characters')}}">
+                Characters
+              </a>
+            </li>
+            <li>
+              <a href="{{route('comics')}}">
+                comics
+              </a>
+            </li>
+            <li>
+              <a href="{{route('movies')}}">
+                movies
+              </a>
+            </li>
+            <li>
+              <a href="{{route('tv')}}">
+                tv
+              </a>
+            </li>
+            <li>
+              <a href="{{route('collectibles')}}">
+                collectibles
+              </a>
+            </li>
+            <li>
+              <a href="{{route('fans')}}">
+                fans
+              </a>
+            </li>
+            <li>
+              <a href="{{route('news')}}">
+                news
+              </a>
+            </li>
+            <li>
+              <a href="{{route('shop')}}">
+                shop
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {{-- input search --}}
+        <input type="text" name="input-search" id="input-search" placeholder="Search">
+      </div>
     </div>
   </div>
 </header>
