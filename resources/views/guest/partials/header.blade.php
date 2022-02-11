@@ -10,7 +10,9 @@
   <div class="header-bottom">
     <div class="main-container">
       {{-- logo --}}
-      <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
+      <a href="{{route('home')}}">
+        <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
+      </a>
       <div class="navbar">
         {{-- menu di navigazione --}}
         <nav>
