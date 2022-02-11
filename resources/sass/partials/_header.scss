@@ -1,12 +1,25 @@
 header.header {
   height: $header_height;
-  // background-color: red;
   color: white;
   .header-top {
+    display: flex;
+    align-items: center;
     height: calc($header_height - $header_bottom_height);
     background-color: $blue_color;
     .main-container {
       text-align: right;
+      text-transform: uppercase;
+      span {
+        font-size: 0.85rem;
+      }
+      select {
+        font-size: 0.85rem;
+        color: white;
+        margin-left: 3.5rem;
+        background-color: $blue_color;
+        border: 0;
+        outline: 0;
+      }
     }
   }
   .header-bottom {

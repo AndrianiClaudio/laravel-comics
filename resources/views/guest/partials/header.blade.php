@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-top">
     <div class="main-container">
-      dc power visa
+      <span>dc power visa</span>
       <select name="additional-sites-select" id="additional-sites-select">
         <option value="additional-sites-option-0">ADDITIONAL DC SITES</option>
       </select>
