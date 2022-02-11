@@ -9,3 +9,28 @@ header.header {
   background-color: red;
 }
 
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+div.cards ul.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  list-style: none;
+  flex-basis: 16.6666666667%;
+}
+
+div.cards ul.card li img {
+  height: 200px;
+  width: 200px;
+}
+
+div.cards ul.card li h2 {
+  text-align: center;
+}
+

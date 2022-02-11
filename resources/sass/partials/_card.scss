@@ -1,0 +1,23 @@
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  ul.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: $card_width;
+    list-style: none;
+    flex-basis: calc(100% / 6);
+    li {
+      img {
+        height: $card_img_height;
+        width: $card_width;
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

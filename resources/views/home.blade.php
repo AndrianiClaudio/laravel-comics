@@ -6,15 +6,21 @@
 @endsection
 {{-- content --}}
 @section('content')
-  @foreach ($data as $card)
-    <div class="cards">
+  <div class="cards">
+    @foreach ($data as $card)
     {{-- per ogni card andro a stampare una ul.card --}}
-      <ul>
+      <ul class="card">
         {{-- immagine --}}
-        <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+        <li>
+          <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+        </li>
         {{-- titolo --}}
-        <li><h2 class="title">{{$card['series']}}</h2></li>
+        <li>
+          <h2 class="title">
+            {{$card['series']}}
+          </h2>
+        </li>
       </ul>
-    </div>
-  @endforeach
+    @endforeach
+  </div>
 @endsection
