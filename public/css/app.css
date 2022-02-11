@@ -1,7 +1,14 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
+
+500;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 a,
@@ -23,7 +30,7 @@ ul {
 
 header.header {
   height: 120px;
-  background-color: red;
+  color: white;
 }
 
 header.header .header-top {
@@ -66,10 +73,30 @@ header.header .header-bottom .main-container .navbar ul li.active {
   background-color: red;
 }
 
-header.header .header-bottom .main-container .navbar input {
+header.header .header-bottom .main-container .navbar .input-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: black;
+}
+
+header.header .header-bottom .main-container .navbar .input-search input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #0282f9;
   padding-left: 55px;
+  padding-right: 20px;
   margin-left: 2rem;
   width: 140px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+header.header .header-bottom .main-container .navbar .input-search .absolute-lens {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 div.cards {

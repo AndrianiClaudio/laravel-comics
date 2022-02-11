@@ -60,7 +60,10 @@
           </ul>
         </nav>
         {{-- input search --}}
-        <input type="text" name="input-search" id="input-search" placeholder="Search">
+        <div class="input-search">
+          <input type="text" name="input-search" id="input-search" placeholder="Search">
+          <i class="fas fa-search absolute-lens"></i>
+        </div>
       </div>
     </div>
   </div>
