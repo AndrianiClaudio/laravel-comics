@@ -123,8 +123,8 @@
           </section>
         </div>
         <div class="container">
-          <p>All Site Content TM and &COPY; 2020 DC Entertainment&comma; unless otherwhise <span class="blue-color">noted here</span>. All rights reserved.</p>
-          <span class="blue-color">Cookie Settings</span>
+          <p>All Site Content TM and &COPY; 2020 DC Entertainment&comma; unless otherwhise <a class="blue-color">noted here</a>. All rights reserved.</p>
+          <a class="blue-color">Cookie Settings</a>
         </div>
       </div>
     </div>
