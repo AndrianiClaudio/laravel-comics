@@ -20,10 +20,10 @@ body {
 }
 
 .container-content {
-  width: 67%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
+  width: 67%;
+  margin: 0 auto;
 }
 
 .container-content a,
@@ -66,7 +66,7 @@ header.header .header-top .container .container-content ul {
 }
 
 header.header .header-top .container .container-content ul a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: white;
   line-height: 0.9rem;
 }
@@ -227,45 +227,62 @@ footer.footer .footer-main {
 }
 
 footer.footer .footer-main .container {
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
+  font-weight: 500;
+}
+
+footer.footer .footer-main .container .container-content {
+  align-items: flex-start;
+  flex-wrap: wrap;
   background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
   background-position: right;
   background-repeat: no-repeat;
 }
 
-footer.footer .footer-main .container .col {
-  padding: 1.5rem;
+footer.footer .footer-main .container .container-content .col {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
-footer.footer .footer-main .container .col section {
-  padding-right: 1rem;
+footer.footer .footer-main .container .container-content .col section {
+  padding-right: 2rem;
 }
 
-footer.footer .footer-main .container .col section h2 {
+footer.footer .footer-main .container .container-content .col section h2 {
   color: white;
-  padding-bottom: 0.6rem;
+  padding: 0.7rem 0;
 }
 
-footer.footer .footer-main .container .col section ul li a {
+footer.footer .footer-main .container .container-content .col section ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer.footer .footer-main .container .container-content .col section ul li a {
   color: #5e5e5ebd;
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+
+footer.footer .footer-main .container .container-content .container {
+  color: #5e5e5ebd;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+footer.footer .footer-main .container .container-content .container span.blue-color {
+  color: #0282f9;
 }
 
 footer.footer .footer-bar {
   background-color: #1c1c1c;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
-footer.footer .footer-bar .container {
-  display: flex;
-  align-items: center;
+footer.footer .footer-bar .container .container-content {
   justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
 }
 
-footer.footer .footer-bar .container button {
+footer.footer .footer-bar .container .container-content button {
   font-size: 1.1rem;
   padding: 0.75rem;
   background-color: #1c1c1c;
@@ -275,18 +292,37 @@ footer.footer .footer-bar .container button {
   color: white;
 }
 
-footer.footer .footer-bar .container ul {
+footer.footer .footer-bar .container .container-content button:hover {
+  border: 3px solid white;
+  color: #0282f9;
+}
+
+footer.footer .footer-bar .container .container-content ul {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-footer.footer .footer-bar .container ul li a {
-  font-size: 1.1rem;
+footer.footer .footer-bar .container .container-content ul li a {
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
-footer.footer .footer-bar .container ul li a.blue-color {
+footer.footer .footer-bar .container .container-content ul li a img {
+  border: 2px solid #1c1c1c;
+  border-radius: 50%;
+}
+
+footer.footer .footer-bar .container .container-content ul li a img:hover {
+  border: 2px solid #0282f9;
+}
+
+footer.footer .footer-bar .container .container-content ul li a.blue-color {
   color: #0282f9;
+}
+
+footer.footer .footer-bar .container .container-content ul li a.blue-color:hover {
+  -webkit-text-decoration: underline 2px solid #0282f9;
+          text-decoration: underline 2px solid #0282f9;
 }
 

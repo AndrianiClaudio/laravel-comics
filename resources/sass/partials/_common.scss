@@ -16,10 +16,10 @@ body {
 .container {
   width: 100%;
   &-content {
-    width: 67%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    width: 67%;
+    margin: 0 auto;
     a,
     a:hover,
     a:focus,

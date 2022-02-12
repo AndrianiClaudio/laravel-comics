@@ -122,9 +122,11 @@
             </ul>
           </section>
         </div>
+        <div class="container">
+          <p>All Site Content TM and &COPY; 2020 DC Entertainment&comma; unless otherwhise <span class="blue-color">noted here</span>. All rights reserved.</p>
+          <span class="blue-color">Cookie Settings</span>
+        </div>
       </div>
-      </div>
-        
     </div>
   </div>
   <div class="footer-bar">
