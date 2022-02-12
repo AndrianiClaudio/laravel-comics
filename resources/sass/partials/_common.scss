@@ -31,6 +31,9 @@ body {
       display: flex;
       align-items: center;
       list-style: none;
+      img {
+        cursor: pointer;
+      }
     }
     button:hover {
       cursor: pointer;

@@ -6,7 +6,7 @@
     justify-content: center;
     ul {
       gap: 4rem;
-      li {
+      li{
         display: flex;
         gap: 1.5rem;
         align-items: center;
@@ -19,6 +19,9 @@
         }
         a {
           color: white;
+          &:hover {
+            text-decoration: underline 2px solid white;
+          }
         }
       }
     }

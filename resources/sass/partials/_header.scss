@@ -41,13 +41,19 @@ header.header {
             li {
               display: block;
               height: $header_bottom_height;
-              &.active {
-                background: linear-gradient(to bottom, white 95%, $blue_color 5%);
-              }
               a {
                 font-size: 1.1rem;
                 line-height: $header_bottom_height;
                 font-weight: bold;
+                &:hover {
+                  color: $blue_color;
+                }
+              }
+              &.active {
+                background: linear-gradient(to bottom, white 95%, $blue_color 5%);
+                a {
+                  color: $blue_color;
+                }
               }
             }
           }
@@ -67,13 +73,14 @@ header.header {
           }
           .input-search {
             width: 135px;
+            padding-right: 1.1rem;
+            text-align: right;
             border: 0;
             outline: 0;
             border-bottom: 3px solid $blue_color;
             font-size: 1rem;
-            text-align: right;
-            padding-right: 1.1rem;
             font-weight: bold;
+            color: $grey_color;
           }
         }
       }

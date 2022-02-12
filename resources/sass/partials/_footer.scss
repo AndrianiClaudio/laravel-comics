@@ -28,6 +28,9 @@ footer.footer {
                   color: $grey_color;
                   line-height: 1.4rem;
                   font-size: 0.9rem;
+                  &:hover {
+                    text-decoration: underline 2px solid $grey_color;
+                  }
                 }
               }
             }
@@ -37,7 +40,11 @@ footer.footer {
           color: $grey_color;
           font-size: 0.9rem;
           a.blue-color {
+            cursor: pointer;
             color: $blue_color;
+            &:hover {
+              text-decoration: underline 2px solid $blue_color;
+            }
           }
           margin-bottom: 2.5rem;
         }

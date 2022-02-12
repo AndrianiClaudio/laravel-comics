@@ -40,6 +40,10 @@ body {
   list-style: none;
 }
 
+.container-content ul img {
+  cursor: pointer;
+}
+
 .container-content button:hover {
   cursor: pointer;
 }
@@ -103,14 +107,22 @@ header.header .header-bottom .container .container-content .navbar ul li {
   height: 110px;
 }
 
-header.header .header-bottom .container .container-content .navbar ul li.active {
-  background: linear-gradient(to bottom, white 95%, #0282f9 5%);
-}
-
 header.header .header-bottom .container .container-content .navbar ul li a {
   font-size: 1.1rem;
   line-height: 110px;
   font-weight: bold;
+}
+
+header.header .header-bottom .container .container-content .navbar ul li a:hover {
+  color: #0282f9;
+}
+
+header.header .header-bottom .container .container-content .navbar ul li.active {
+  background: linear-gradient(to bottom, white 95%, #0282f9 5%);
+}
+
+header.header .header-bottom .container .container-content .navbar ul li.active a {
+  color: #0282f9;
 }
 
 header.header .header-bottom .container .container-content .relative-input-search {
@@ -131,13 +143,14 @@ header.header .header-bottom .container .container-content .relative-input-searc
 
 header.header .header-bottom .container .container-content .relative-input-search .input-search {
   width: 135px;
+  padding-right: 1.1rem;
+  text-align: right;
   border: 0;
   outline: 0;
   border-bottom: 3px solid #0282f9;
   font-size: 1rem;
-  text-align: right;
-  padding-right: 1.1rem;
   font-weight: bold;
+  color: #5e5e5ebd;
 }
 
 .jumbo {
@@ -198,11 +211,21 @@ div.cards .container .container-content .container ul.card li img {
   width: 200px;
 }
 
+div.cards .container .container-content .container ul.card li img:hover {
+  border: 3px solid #0282f9;
+}
+
 div.cards .container .container-content .container ul.card li h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
+  cursor: pointer;
+}
+
+div.cards .container .container-content .container ul.card li h2:hover {
+  -webkit-text-decoration: underline 2px solid #0282f9;
+          text-decoration: underline 2px solid #0282f9;
 }
 
 div.cards .container button.btn {
@@ -251,6 +274,11 @@ div.cards .container button.btn:hover {
   color: white;
 }
 
+.container-blue .container-content ul li a:hover {
+  -webkit-text-decoration: underline 2px solid white;
+          text-decoration: underline 2px solid white;
+}
+
 footer.footer .footer-main {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-repeat: no-repeat;
@@ -294,6 +322,11 @@ footer.footer .footer-main .container .container-content .col section ul li a {
   font-size: 0.9rem;
 }
 
+footer.footer .footer-main .container .container-content .col section ul li a:hover {
+  -webkit-text-decoration: underline 2px solid #5e5e5ebd;
+          text-decoration: underline 2px solid #5e5e5ebd;
+}
+
 footer.footer .footer-main .container .container-content .container {
   color: #5e5e5ebd;
   font-size: 0.9rem;
@@ -301,7 +334,13 @@ footer.footer .footer-main .container .container-content .container {
 }
 
 footer.footer .footer-main .container .container-content .container a.blue-color {
+  cursor: pointer;
   color: #0282f9;
+}
+
+footer.footer .footer-main .container .container-content .container a.blue-color:hover {
+  -webkit-text-decoration: underline 2px solid #0282f9;
+          text-decoration: underline 2px solid #0282f9;
 }
 
 footer.footer .footer-bar {

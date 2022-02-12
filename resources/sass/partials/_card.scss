@@ -35,12 +35,19 @@ div.cards {
             img {
               height: $card_img_height;
               width: $card_width;
+              &:hover {
+                border: 3px solid $blue_color;
+              }
             }
             h2 {
               color: white;
               text-transform: uppercase;
               font-size: 1rem;
               font-weight: 400;
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline 2px solid $blue_color;
+              }
             }
           }
         }
