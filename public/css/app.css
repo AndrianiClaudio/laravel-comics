@@ -103,14 +103,21 @@ header.header .header-bottom .container .container-content .navbar ul {
 }
 
 header.header .header-bottom .container .container-content .navbar ul li {
-  display: block;
   height: 110px;
 }
 
 header.header .header-bottom .container .container-content .navbar ul li a {
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   line-height: 110px;
+  font-size: 1.1rem;
   font-weight: bold;
+}
+
+header.header .header-bottom .container .container-content .navbar ul li a i {
+  color: #0282f9;
+  margin-top: -8px;
 }
 
 header.header .header-bottom .container .container-content .navbar ul li a:hover {
@@ -136,13 +143,14 @@ header.header .header-bottom .container .container-content .relative-input-searc
   position: absolute;
   right: 0;
   top: 50%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   transform: translateY(-50%);
   color: #5e5e5ebd;
 }
 
 header.header .header-bottom .container .container-content .relative-input-search .input-search {
   width: 135px;
+  padding: 0.1rem 0;
   padding-right: 1.1rem;
   text-align: right;
   border: 0;
@@ -150,7 +158,7 @@ header.header .header-bottom .container .container-content .relative-input-searc
   border-bottom: 3px solid #0282f9;
   font-size: 1rem;
   font-weight: bold;
-  color: #5e5e5ebd;
+  color: #1c1c1c;
 }
 
 .jumbo {
@@ -199,10 +207,10 @@ div.cards .container .container-content .container ul.card {
   flex-basis: calc(16.6666666667% - 1.5rem);
   flex-direction: column;
   align-items: flex-start;
-  min-width: 200px;
 }
 
 div.cards .container .container-content .container ul.card li {
+  max-width: 200px;
   margin-bottom: 1.5rem;
 }
 
@@ -224,8 +232,8 @@ div.cards .container .container-content .container ul.card li h2 {
 }
 
 div.cards .container .container-content .container ul.card li h2:hover {
-  -webkit-text-decoration: underline 2px solid #0282f9;
-          text-decoration: underline 2px solid #0282f9;
+  -webkit-text-decoration: underline 2px solid white;
+          text-decoration: underline 2px solid white;
 }
 
 div.cards .container button.btn {
@@ -268,6 +276,7 @@ div.cards .container button.btn:hover {
 .container-blue .container-content ul li svg {
   display: inline-block;
   width: 5rem;
+  cursor: pointer;
 }
 
 .container-blue .container-content ul li a {
@@ -286,6 +295,7 @@ footer.footer .footer-main {
 }
 
 footer.footer .footer-main .container {
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
 
@@ -328,6 +338,7 @@ footer.footer .footer-main .container .container-content .col section ul li a:ho
 }
 
 footer.footer .footer-main .container .container-content .container {
+  background-color: rgba(0, 0, 0, 0);
   color: #5e5e5ebd;
   font-size: 0.9rem;
   margin-bottom: 2.5rem;

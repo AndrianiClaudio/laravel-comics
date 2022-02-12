@@ -4,6 +4,7 @@ footer.footer {
     background-repeat: no-repeat;
     background-size: cover;
     .container {
+      background-color: rgba($color:black, $alpha: .5);
       font-weight: 500;
       .container-content {
         align-items: flex-start;
@@ -37,6 +38,7 @@ footer.footer {
           }
         }
         .container {
+          background-color: rgba($color:black, $alpha: 0);
           color: $grey_color;
           font-size: 0.9rem;
           a.blue-color {

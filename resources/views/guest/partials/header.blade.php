@@ -68,6 +68,7 @@
             <li class="{{'shop' === route::currentRouteName() ? 'active' : ''}}">
               <a href="{{route('shop')}}">
                 shop
+                <i class="fa-solid fa-sort-down"></i>
               </a>
             </li>
           </ul>

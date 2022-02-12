@@ -5,5 +5,7 @@
     Tv
 @endsection
 {{-- content --}}
-@section('content')
+@section('main-content')
+@endsection
+@section('sub-content')
 @endsection
