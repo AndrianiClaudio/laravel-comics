@@ -1,0 +1,29 @@
+.container-blue {
+  padding: 3rem 0;
+  .container-content {
+    justify-content: center;
+    ul {
+      gap: 4rem;
+      li{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        img {
+          height: 5rem;
+        }
+        svg {
+          display: inline-block;
+          width: 5rem;
+          cursor: pointer;
+        }
+        a {
+          color: white;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: underline 2px solid white;
+          }
+        }
+      }
+    }
+  }
+}

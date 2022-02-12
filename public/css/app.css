@@ -77,7 +77,7 @@ header.header .header-top .container .container-content ul a {
 
 header.header .header-top .container .container-content ul a .sup-text {
   font-size: 0.5rem;
-  vertical-align: top;
+  vertical-align: text-top;
 }
 
 header.header .header-top .container .container-content ul a i {
@@ -204,13 +204,11 @@ div.cards .container .container-content .container {
 }
 
 div.cards .container .container-content .container ul.card {
-  flex-basis: calc(16.6666666667% - 1.5rem);
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 div.cards .container .container-content .container ul.card li {
-  max-width: 200px;
   margin-bottom: 1.5rem;
 }
 
@@ -281,6 +279,7 @@ div.cards .container button.btn:hover {
 
 .container-blue .container-content ul li a {
   color: white;
+  text-transform: uppercase;
 }
 
 .container-blue .container-content ul li a:hover {
