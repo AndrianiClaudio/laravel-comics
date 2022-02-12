@@ -3,12 +3,11 @@
     <div class="container">
       <div class="container-content">
         <ul>
+          @foreach (config('header.header_top.item') as $item)
           <li>
-            <a href="#">DC POWER<span class="sup-text">SM</span> VISA&reg;</a>
+            <a href="#">{!! $item !!}</a>
           </li>
-          <li>
-            <a href="#">ADDITIONAL DC SITES <i class="fa-solid fa-sort-down"></i></a>
-          </li>
+          @endforeach
         </ul>
       </div>
     </div>
@@ -19,58 +18,21 @@
         {{-- logo --}}
         <div class="logo">
           <a href="{{route('home')}}">
-            <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
+            <img 
+            src="{{asset('img/'.config('header.header_bottom.logo.folder'))}}" 
+            alt="{{config('header.header_bottom.logo.alt')}}"
+            class="{{config('header.header_bottom.logo.class')}}">
           </a>
         </div>
-        {{-- menu di navigazione --}}
         <nav class="navbar">
           <ul>
-            <li class="{{'characters' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('characters')}}">
-                Characters
-              </a>
-            </li>
-            <li  class="{{'comics' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('comics')}}">
-                comics
-              </a>
-            </li>
-            <li  class="{{'movies' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('movies')}}">
-                movies
-              </a>
-            </li>
-            <li class="{{'tv' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('tv')}}">
-                tv
-              </a>
-            </li>
-            <li class="{{'games' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('games')}}">
-                games
-              </a>
-            </li>
-            <li class="{{'collectibles' === route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('collectibles')}}">
-                collectibles
-              </a>
-            </li>
-            <li class="{{'fans' === Route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('fans')}}">
-                fans
-              </a>
-            </li>
-            <li class="{{'news' === route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('news')}}">
-                news
-              </a>
-            </li>
-            <li class="{{'shop' === route::currentRouteName() ? 'active' : ''}}">
-              <a href="{{route('shop')}}">
-                shop
-                <i class="fa-solid fa-sort-down"></i>
-              </a>
-            </li>
+            @foreach (config('header.header_bottom.navbar.item') as $item)
+                <li class="{{$item === Route::currentRouteName() ? 'active' : ''}}">
+                  <a href="{{route($item)}}">
+                    {{$item}}
+                  </a>
+                </li>
+            @endforeach
           </ul>
         </nav>
         {{-- input search --}}
