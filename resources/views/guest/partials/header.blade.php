@@ -74,7 +74,7 @@
         </nav>
         {{-- input search --}}
         <div class="relative-input-search">
-          <input type="text" name="input-search" id="input-search" placeholder="Search">
+          <input type="text" class="input-search" name="input-search" id="input-search" placeholder="Search">
           <i class="fas fa-search absolute-lens"></i>
         </div>
       </div>

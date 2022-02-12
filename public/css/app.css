@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;
 
-500;700&display=swap);* {
+700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 html {
   font-size: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 body {
@@ -26,18 +26,26 @@ body {
   align-items: center;
 }
 
-.container a,
-.container a:hover,
-.container a:focus,
-.container a:active {
+.container-content a,
+.container-content a:hover,
+.container-content a:focus,
+.container-content a:active {
   color: black;
   text-decoration: none;
 }
 
-.container ul {
+.container-content ul {
   display: flex;
   align-items: center;
   list-style: none;
+}
+
+.container-content button:hover {
+  cursor: pointer;
+}
+
+.container-blue {
+  background-color: #0282f9;
 }
 
 header.header .header-top {
@@ -65,7 +73,7 @@ header.header .header-top .container .container-content ul a {
 
 header.header .header-top .container .container-content ul a .sup-text {
   font-size: 0.5rem;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 
 header.header .header-top .container .container-content ul a i {
@@ -77,6 +85,7 @@ header.header .header-bottom {
 }
 
 header.header .header-bottom .container .container-content .logo {
+  margin-right: 3rem;
   height: 80px;
 }
 
@@ -115,67 +124,100 @@ header.header .header-bottom .container .container-content .relative-input-searc
   position: absolute;
   right: 0;
   top: 50%;
+  font-size: 0.8rem;
   transform: translateY(-50%);
+  color: #5e5e5ebd;
+}
+
+header.header .header-bottom .container .container-content .relative-input-search .input-search {
+  width: 135px;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #0282f9;
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 1.1rem;
+  font-weight: bold;
 }
 
 .jumbo {
   height: 500px;
   background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 div.cards {
   background-color: #1c1c1c;
-  padding: 2rem;
 }
 
-div.cards .container {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
+div.cards .container .container-content {
   padding: 2.5rem 0;
   gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-div.cards .container ul.card {
+div.cards .container .container-content .current-series {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  text-transform: uppercase;
+  background-color: #0282f9;
+}
+
+div.cards .container .container-content .current-series b {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.75rem;
+  color: white;
+}
+
+div.cards .container .container-content .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 200px;
-  list-style: none;
-  flex-basis: calc(16.6666666667% - 1rem);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-div.cards .container ul.card li img {
+div.cards .container .container-content .container ul.card {
+  flex-basis: calc(16.6666666667% - 1.5rem);
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px;
+}
+
+div.cards .container .container-content .container ul.card li {
+  margin-bottom: 1.5rem;
+}
+
+div.cards .container .container-content .container ul.card li img {
   height: 200px;
   width: 200px;
 }
 
-div.cards .container ul.card li h2 {
-  text-align: center;
+div.cards .container .container-content .container ul.card li h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-div.cards button.btn {
+div.cards .container button.btn {
   display: block;
   margin: 0 auto;
   background-color: #0282f9;
   color: white;
   padding: 0.5rem 1.75rem;
   font-weight: bold;
-  border: 0;
+  border: 1px solid #0282f9;
   outline: 0;
 }
 
-.container-blue {
-  background-color: #0282f9;
-  padding: 2.5rem 0;
-}
-
-.container-blue .container {
-  width: 60%;
+div.cards .container button.btn:hover {
+  border: 1px solid white;
 }
 
 footer.footer .footer-main {

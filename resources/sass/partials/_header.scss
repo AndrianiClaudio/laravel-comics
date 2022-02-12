@@ -14,7 +14,7 @@ header.header {
             line-height: 0.9rem;
             .sup-text {
               font-size: 0.5rem;
-              vertical-align: text-top;
+              vertical-align: top;
             }
             i {
               vertical-align: top;
@@ -30,6 +30,7 @@ header.header {
       .container-content {
         // justify-content: space-between;
         .logo {
+          margin-right: 3rem;
           height: $logo_height;
         }
         .navbar {
@@ -60,7 +61,19 @@ header.header {
             position: absolute;
             right: 0;
             top: 50%;
+            font-size: 0.8rem;
             transform: translateY(-50%);
+            color: $grey_color;
+          }
+          .input-search {
+            width: 135px;
+            border: 0;
+            outline: 0;
+            border-bottom: 3px solid $blue_color;
+            font-size: 1rem;
+            text-align: right;
+            padding-right: 1.1rem;
+            font-weight: bold;
           }
         }
       }
