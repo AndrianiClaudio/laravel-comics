@@ -10,23 +10,26 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  // possibile gestione futura media screen
-  min-width: 1100px;
-}
-a,
-a:hover,
-a:active,
-a:focus {
-  color: $dark_color;
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-.main-container {
-  width: 70%;
-  margin: 0 auto;
+  min-width: 1750px;
 }
 .container {
   width: 100%;
+  &-content {
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
 }

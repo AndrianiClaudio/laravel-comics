@@ -1,67 +1,62 @@
 header.header {
-  height: $header_height;
-  color: white;
   .header-top {
-    display: flex;
-    align-items: center;
-    height: calc($header_height - $header_bottom_height);
-    background-color: $blue_color;
-    .main-container {
-      text-align: right;
-      text-transform: uppercase;
-      span {
-        font-size: 0.85rem;
-      }
-      select {
-        font-size: 0.85rem;
-        color: white;
-        margin-left: 3.5rem;
-        background-color: $blue_color;
-        border: 0;
-        outline: 0;
+    text-transform: uppercase;
+    .container {
+      background-color: $blue_color;
+      .container-content {
+        padding: .5rem 0;
+        justify-content: flex-end;
+        ul {
+          gap: 3.5rem;
+          a {
+            font-size: 0.9rem;
+            color: white;
+            line-height: 0.9rem;
+            .sup-text {
+              font-size: 0.5rem;
+              vertical-align: text-top;
+            }
+            i {
+              vertical-align: top;
+            }
+          }
+        }
       }
     }
   }
   .header-bottom {
-    display: flex;
     height: $header_bottom_height;
-    .logo {
-      height: $logo_height;
-    }
-    .main-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .navbar {
-        display: flex;
-        height: 1rem;
-        ul {
-          display: flex;
-          gap: 1.25rem;
-          text-transform: uppercase;
-          li {
-            &.active {
-              background-color: red;
+    .container {
+      .container-content {
+        // justify-content: space-between;
+        .logo {
+          height: $logo_height;
+        }
+        .navbar {
+          margin-left: auto;
+          ul {
+            text-transform: uppercase;
+            gap:3rem;
+            li {
+              display: block;
+              height: $header_bottom_height;
+              &.active {
+                background: linear-gradient(to bottom, white 95%, $blue_color 5%);
+              }
+              a {
+                font-size: 1.1rem;
+                line-height: $header_bottom_height;
+                font-weight: bold;
+              }
             }
           }
         }
-        .input-search {
+        .relative-input-search {
           display: flex;
-          align-items: center;
           position: relative;
-          color: $dark_color;
-          input {
-            border: 0;
-            outline: 0;
-            border-bottom: 2px solid $blue_color;
-            padding-left: 55px;
-            padding-right: 20px;
-            margin-left: 2rem;
-            width: 140px;
-            font-size: 1.15rem;
-            font-weight: bold;
-          }
-          .absolute-lens {
+          align-items: center;
+          margin-left: 3.5rem;
+          .absolute-lens{
             position: absolute;
             right: 0;
             top: 50%;

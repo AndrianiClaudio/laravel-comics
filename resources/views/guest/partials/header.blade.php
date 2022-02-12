@@ -1,21 +1,29 @@
 <header class="header">
   <div class="header-top">
-    <div class="main-container">
-      <span>dc power visa</span>
-      <select name="additional-sites-select" id="additional-sites-select">
-        <option value="additional-sites-option-0">ADDITIONAL DC SITES</option>
-      </select>
+    <div class="container">
+      <div class="container-content">
+        <ul>
+          <li>
+            <a href="#">DC POWER<span class="sup-text">SM</span> VISA&reg;</a>
+          </li>
+          <li>
+            <a href="#">ADDITIONAL DC SITES <i class="fa-solid fa-sort-down"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="header-bottom">
-    <div class="main-container">
-      {{-- logo --}}
-      <a href="{{route('home')}}">
-        <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
-      </a>
-      <div class="navbar">
+    <div class="container">
+      <div class="container-content">
+        {{-- logo --}}
+        <div class="logo">
+          <a href="{{route('home')}}">
+            <img src="{{asset('img/dc-logo.png')}}" alt="Logo DC" class="logo">
+          </a>
+        </div>
         {{-- menu di navigazione --}}
-        <nav>
+        <nav class="navbar">
           <ul>
             <li class="{{'characters' === Route::currentRouteName() ? 'active' : ''}}">
               <a href="{{route('characters')}}">
@@ -65,10 +73,11 @@
           </ul>
         </nav>
         {{-- input search --}}
-        <div class="input-search">
+        <div class="relative-input-search">
           <input type="text" name="input-search" id="input-search" placeholder="Search">
           <i class="fas fa-search absolute-lens"></i>
         </div>
+      </div>
       </div>
     </div>
   </div>
