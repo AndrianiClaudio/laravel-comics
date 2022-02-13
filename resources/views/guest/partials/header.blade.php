@@ -21,7 +21,9 @@
             <img 
             src="{{asset('img/'.config('header.header_bottom.logo.folder'))}}" 
             alt="{{config('header.header_bottom.logo.alt')}}"
-            class="{{config('header.header_bottom.logo.class')}}">
+            class="{{config('header.header_bottom.logo.class')}}"
+            title="Back to Home"
+            >
           </a>
         </div>
         <nav class="navbar">

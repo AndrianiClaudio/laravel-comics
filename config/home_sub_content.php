@@ -1,7 +1,7 @@
 <?php
 return [
   [
-    'item' => 'digital-comics',
+    'item' => 'digital comics',
     'src' => 'buy-comics-digital-comics.png',
     'type'=> 'img'
   ],

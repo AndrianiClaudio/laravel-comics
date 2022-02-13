@@ -28,6 +28,7 @@ div.cards {
         ul.card {
           align-items: flex-start;
           flex-direction: column;
+          flex-basis: calc(100% / 6 - 3rem);
           li {
             margin-bottom: 1.5rem;
             img {

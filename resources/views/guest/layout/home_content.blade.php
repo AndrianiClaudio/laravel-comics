@@ -10,7 +10,7 @@
           <ul class="card">
             {{-- immagine --}}
             <li>
-                <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
+                <img src="{{$card['thumb']}}" alt="{{$card['title']}}" title="{{$card['title']}}">
             </li>
             {{-- titolo --}}
             <li>

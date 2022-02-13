@@ -14,42 +14,16 @@
                 @if ($i === 'images')
                   @foreach ($item as $src)
                     <a href="#">
-                      <img src="{{asset('img/'.$src)}}" alt="">
+                      @php
+                          $txt = ucfirst(explode('.',explode('-',$src)[1])[0]);
+                      @endphp
+                      <img src="{{asset('img/'.$src)}}" alt="{{$txt}}" title="{{$txt}}">
                     </a>
                   @endforeach
                 @endif
               @endif
             </li>
           @endforeach
-
-          {{-- <li>
-            <a href="#" class="blue-color">FOLLOW US</a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="{{asset('img/footer-facebook.png')}}" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="{{asset('img/footer-twitter.png')}}" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="{{asset('img/footer-youtube.png')}}" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="{{asset('img/footer-pinterest.png')}}" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="{{asset('img/footer-periscope.png')}}" alt="">
-            </a>
-          </li> --}}
         </ul>
       </div>
     </div>
