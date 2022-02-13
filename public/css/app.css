@@ -222,6 +222,7 @@ div.cards .container .container-content .container ul.card li img:hover {
 }
 
 div.cards .container .container-content .container ul.card li h2 {
+  width: 200px;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
@@ -318,6 +319,7 @@ footer.footer .footer-main .container .container-content .col section {
 footer.footer .footer-main .container .container-content .col section h2 {
   color: white;
   padding: 0.7rem 0;
+  text-transform: uppercase;
 }
 
 footer.footer .footer-main .container .container-content .col section ul {
