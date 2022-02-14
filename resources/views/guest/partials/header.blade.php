@@ -32,11 +32,17 @@
                 $last = last(config('header.header_bottom.navbar.item'));
             @endphp
             @foreach (config('header.header_bottom.navbar.item') as $item)
-                <li class="list-item {{$item === Route::currentRouteName() ? 'active' : ''}}">
-                  <a href="{{route($item)}}">
-                    {{$item}}
-                  </a>
-
+            @php
+            $routeName = Route::currentRouteName();
+            if($routeName === 'card') {
+              $routeName = 'comics';
+            }
+            @endphp
+            <li class="list-item {{$item === $routeName ? 'active' : ''}}">
+              <a href="{{route($item)}}">
+                {{$item}}
+              </a>
+              
                   @if ($item === $last)
                   <i class="fa-solid fa-sort-down"></i>
                   @endif

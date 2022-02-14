@@ -17,7 +17,6 @@ Route::get('/card/{id}', function ($id) {
     foreach($card as $c) {
         $singleCard = $c;
     }
-    // @dd($singleCard);
     return view('guest.partials.card.card_info',['card' => $singleCard]);
 })-> name('card');
 
@@ -27,7 +26,7 @@ Route::get('/characters', function () {
 })-> name('characters');
 
 Route::get('/comics', function () {
-    return view('guest.comics');
+    return view('guest.home',['data' => config('comics')]);
 })-> name('comics');
 
 Route::get('/movies', function () {
