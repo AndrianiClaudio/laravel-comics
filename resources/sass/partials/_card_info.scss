@@ -74,7 +74,6 @@
 .sub-card-container {
   background-color: #f6f6f6;
   .container {
-    border-top: 1px solid lightgrey;
     .container-content {
       align-items: flex-start;
       width: 50%;
@@ -105,6 +104,43 @@
               a {
                 color: $blue_color;
               }
+            }
+          }
+        }
+      }
+    }
+    .link-bar {
+      margin-top:6rem;
+      border-top: 1px solid lightgrey;
+      .container {
+        display: flex;
+        margin: 0 auto;
+        width: 50%;
+        .list {
+          display: flex;
+          .list-item {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            .icon-dc {
+              width: 37px;
+              height: 37px;
+              background: url('../../../public/img/cta-icons.png') 0 0;
+            }
+            .icon-shop-dc {
+              width: 37px;
+              height: 37px;
+              background: url('../../../public/img/cta-icons.png') calc(37px * 1) 0;
+            }
+            .icon-locator {
+              width: 37px;
+              height: 37px;
+              background: url('../../../public/img/cta-icons.png') calc(37px * 2) 0;
+            }
+            .icon-subscriptions {
+              width: 37px;
+              height: 37px;
+              background: url('../../../public/img/cta-icons.png') calc(37px * 3) 0;
             }
           }
         }
