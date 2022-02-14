@@ -1,0 +1,16 @@
+[class ^= 'card-'] {
+  .container {
+    background: linear-gradient(to bottom, $blue_color 5rem, white calc(100% - 12rem));
+    .container-content {
+      width: 60%;
+      position: relative;
+      .current-series {
+        position: absolute;
+        bottom: calc(100% - 4rem);
+      }
+      .container {
+        padding-top: 5rem;
+      }
+    }
+  }
+}

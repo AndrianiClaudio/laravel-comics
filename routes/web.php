@@ -18,7 +18,7 @@ Route::get('/card/{id}', function ($id) {
         $singleCard = $c;
     }
     // @dd($singleCard);
-    return view('guest.card_info',['card' => $singleCard]);
+    return view('guest.partials.card.card_info',['card' => $singleCard]);
 })-> name('card');
 
 // rotte navbar

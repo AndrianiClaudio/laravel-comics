@@ -8,7 +8,7 @@
 @section('main_content')
 @section('absolute')
   <div class="current-series">
-    <img src="{{$card['thumb']}}" alt="">
+    <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
   </div>
 @endsection
   @include('guest.layout.card')

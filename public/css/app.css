@@ -184,7 +184,7 @@ div.cards .container .container-content {
 
 div.cards .container .container-content .current-series {
   position: absolute;
-  bottom: -2rem;
+  bottom: calc(100% - 1.75rem);
   left: 0;
   text-transform: uppercase;
   background-color: #0282f9;
@@ -252,6 +252,24 @@ div.cards .container button.btn {
 
 div.cards .container button.btn:hover {
   border: 1px solid white;
+}
+
+[class^=card-] .container {
+  background: linear-gradient(to bottom, #0282f9 5rem, white calc(100% - 12rem));
+}
+
+[class^=card-] .container .container-content {
+  width: 60%;
+  position: relative;
+}
+
+[class^=card-] .container .container-content .current-series {
+  position: absolute;
+  bottom: calc(100% - 4rem);
+}
+
+[class^=card-] .container .container-content .container {
+  padding-top: 5rem;
 }
 
 .container-blue {
