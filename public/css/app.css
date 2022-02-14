@@ -305,6 +305,7 @@ div.cards .container button.btn:hover {
 }
 
 [class^=card-] .container .container-content .container .price-available .availability {
+  cursor: pointer;
   color: white;
   display: flex;
   align-items: center;
@@ -336,6 +337,10 @@ div.cards .container button.btn:hover {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.7rem;
+}
+
+[class^=card-] .container .container-content .adv img {
+  cursor: pointer;
 }
 
 .sub-card-container {
@@ -411,41 +416,40 @@ div.cards .container button.btn:hover {
   border-right: 1px solid lightgrey;
 }
 
-.sub-card-container .container .link-bar .container .list .list-item:first-child {
-  border-left: 1px solid lightgrey;
-}
-
 .sub-card-container .container .link-bar .container .list .list-item .align-start {
   align-self: flex-start;
   color: #5e5e5ebd;
 }
 
-.sub-card-container .container .link-bar .container .list .list-item .icon-dc {
+.sub-card-container .container .link-bar .container .list .list-item [class^=icon-] {
   width: 37px;
   height: 36px;
   transform: scale(1.5);
+}
+
+.sub-card-container .container .link-bar .container .list .list-item .icon-dc {
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 0 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-shop-dc {
-  width: 37px;
-  height: 36px;
-  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 37px 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-locator {
-  width: 37px;
-  height: 36px;
-  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 74px 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-subscriptions {
-  width: 37px;
-  height: 36px;
-  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 111px 0;
+}
+
+.sub-card-container .container .link-bar .container .list .list-item:hover {
+  cursor: pointer;
+  background-color: rgba(2, 130, 249, 0.5);
+}
+
+.sub-card-container .container .link-bar .container .list .list-item:first-child {
+  border-left: 1px solid lightgrey;
 }
 
 .container-blue {

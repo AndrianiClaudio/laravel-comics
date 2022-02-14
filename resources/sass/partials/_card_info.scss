@@ -38,6 +38,7 @@
             }
           }
           .availability {
+            cursor: pointer;
             color: white;
             display: flex;
             align-items: center;
@@ -66,6 +67,9 @@
           font-weight: bold;
           font-size: 1rem;
           line-height: 1.7rem;
+        }
+        img {
+          cursor: pointer;
         }
       }
     }
@@ -127,36 +131,33 @@
             height: 100px;
             width: 25%;
             border-right: 1px solid lightgrey;
-            &:first-child {
-              border-left: 1px solid lightgrey;
-            }
             .align-start {
               align-self: flex-start;
               color: $grey_color;
             }
-            .icon-dc {
+            [class^= 'icon-'] {
               width: 37px;
               height: 36px;
               transform: scale(1.5);
+            }
+            .icon-dc {
               background: url('../../../public/img/cta-icons.png') 0 0;
             }
             .icon-shop-dc {
-              width: 37px;
-              height: 36px;
-              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 1) 0;
             }
             .icon-locator {
-              width: 37px;
-              height: 36px;
-              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 2) 0;
             }
             .icon-subscriptions {
-              width: 37px;
-              height: 36px;
-              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 3) 0;
+            }
+            &:hover {
+              cursor: pointer;
+              background-color: rgba($color: $blue_color, $alpha: .5);
+            }
+            &:first-child {
+              border-left: 1px solid lightgrey;
             }
           }
         }
