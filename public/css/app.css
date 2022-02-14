@@ -255,7 +255,7 @@ div.cards .container button.btn:hover {
 }
 
 [class^=card-] .container {
-  background: linear-gradient(to top, white calc(100% - 6rem), #0282f9 0);
+  background: linear-gradient(to top, white calc(100% - 5rem), #0282f9 0);
 }
 
 [class^=card-] .container .container-content {
@@ -265,8 +265,40 @@ div.cards .container button.btn:hover {
 }
 
 [class^=card-] .container .container-content .current-series {
+  border: 1px solid white;
   position: absolute;
   bottom: calc(100% - 4rem);
+  z-index: 100;
+}
+
+[class^=card-] .container .container-content .current-series .abs-top,
+[class^=card-] .container .container-content .current-series .abs-bottom {
+  font-size: 0.95rem;
+  position: absolute;
+  z-index: 1000;
+  padding: 0.25rem;
+  background-color: #00a9d9;
+}
+
+[class^=card-] .container .container-content .current-series .abs-top a,
+[class^=card-] .container .container-content .current-series .abs-bottom a {
+  color: white;
+}
+
+[class^=card-] .container .container-content .current-series .abs-top {
+  top: 0;
+  left: 0;
+}
+
+[class^=card-] .container .container-content .current-series .abs-bottom {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+[class^=card-] .container .container-content .current-series img {
+  position: relative;
+  height: 100%;
 }
 
 [class^=card-] .container .container-content .container {
@@ -277,7 +309,7 @@ div.cards .container button.btn:hover {
 [class^=card-] .container .container-content .container .title {
   text-transform: uppercase;
   color: #003f5e;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 [class^=card-] .container .container-content .container .price-available {
@@ -345,6 +377,7 @@ div.cards .container button.btn:hover {
 
 .sub-card-container {
   background-color: #f6f6f6;
+  border-top: 1px solid lightgrey;
 }
 
 .sub-card-container .container .container-content {

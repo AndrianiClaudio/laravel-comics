@@ -41,7 +41,7 @@
             <span class='title-txt'>Series:</span>
             <div class="item-txt">
               <a href="#">
-                {{$card['series']}}
+                {{strtoupper($card['series'])}}
               </a>
             </div>
           </li>
