@@ -255,12 +255,13 @@ div.cards .container button.btn:hover {
 }
 
 [class^=card-] .container {
-  background: linear-gradient(to bottom, #0282f9 5rem, white calc(100% - 12rem));
+  background: linear-gradient(to top, white calc(100% - 6rem), #0282f9 0);
 }
 
 [class^=card-] .container .container-content {
-  width: 60%;
   position: relative;
+  width: 60%;
+  gap: 2.5rem;
 }
 
 [class^=card-] .container .container-content .current-series {
@@ -269,7 +270,73 @@ div.cards .container button.btn:hover {
 }
 
 [class^=card-] .container .container-content .container {
-  padding-top: 5rem;
+  padding-top: 11rem;
+  padding-bottom: 5rem;
+}
+
+[class^=card-] .container .container-content .container .title {
+  text-transform: uppercase;
+  color: #003f5e;
+  margin-bottom: 1rem;
+}
+
+[class^=card-] .container .container-content .container .price-available {
+  display: flex;
+  margin: 0.5rem auto;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  background-color: #55ba59;
+  color: #a1f595;
+  font-weight: bold;
+}
+
+[class^=card-] .container .container-content .container .price-available .price {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+[class^=card-] .container .container-content .container .price-available .price #price-value {
+  color: white;
+}
+
+[class^=card-] .container .container-content .container .price-available .availability {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 30%;
+}
+
+[class^=card-] .container .container-content .container .price-available .availability i {
+  margin-top: -0.5rem;
+}
+
+[class^=card-] .container .container-content .container .description {
+  margin-top: 1rem;
+  color: #817273;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.9rem;
+}
+
+[class^=card-] .container .container-content .adv {
+  padding-top: 6rem;
+}
+
+[class^=card-] .container .container-content .adv .title {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  color: #5e5e5ebd;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 .container-blue {
