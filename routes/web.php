@@ -5,8 +5,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guest.home',['data' => config('comics')]);
 })-> name('home');
-Route::get('/card', function () {
-    return view('guest.card_info');
+Route::get('/card/{id}', function ($id) {
+    $data = collect(config(('comics')));
+    // $data->where('id' === $id);
+    // @dd($data);
+    $card = [];
+    foreach ($data as $value) {
+        // @dd($value['id'],$id);
+        if($value['id'] === intval($id)) {
+            // @dd($id);
+            $card [] = $value;
+        }   
+    }
+
+    
+    // @dd($card);
+
+    return view('guest.card_info',['card' => $card]);
 })-> name('card');
 
 // rotte navbar
