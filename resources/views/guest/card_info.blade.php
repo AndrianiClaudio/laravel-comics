@@ -2,17 +2,22 @@
 @extends('guest.layout.base')
 {{-- title --}}
 @section('documentTitle')
-    Home
+    Card
 @endsection
 {{-- content --}}
 @section('main_content')
 @section('absolute')
-<div class="current-series">
-  <b>current-series</b>
+<div class="container">
+  <div class="container-content">
+    <div class="current-series">
+      <b>current-series</b>
+    </div>
+  </div>
 </div>
 @endsection
-  @include('guest.layout.home_content')
+  @include('guest.layout.card')
 @endsection
 @section('sub_content')
-  @include('guest.layout.sub_content')
+
+  {{-- @include('guest.layout.sub_content') --}}
 @endsection

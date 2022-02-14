@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guest.home',['data' => config('comics')]);
 })-> name('home');
+Route::get('/card', function () {
+    return view('guest.card_info');
+})-> name('card');
 
 // rotte navbar
 Route::get('/characters', function () {

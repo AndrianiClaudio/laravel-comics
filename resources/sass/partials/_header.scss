@@ -37,7 +37,11 @@ header.header {
           ul {
             text-transform: uppercase;
             gap:3rem;
-            li {
+            .list-item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap:1rem;
               height: $header_bottom_height;
               a {
                 display: flex;
@@ -46,17 +50,18 @@ header.header {
                 line-height: $header_bottom_height;
                 font-size: 1.1rem;
                 font-weight: bold;
-                i {
-                  color: $blue_color;
-                  margin-top: -8px;
-                }
                 &:hover {
                   color: $blue_color;
                 }
               }
+              i {
+                color: $blue_color;
+                margin-top: -8px;
+                cursor: pointer;
+              }
               &.active {
-                background: linear-gradient(to bottom, white 95%, $blue_color 5%);
                 a {
+                  background: linear-gradient(to bottom, white 95%, $blue_color 5%);
                   color: $blue_color;
                 }
               }

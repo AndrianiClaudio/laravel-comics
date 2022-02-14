@@ -34,6 +34,7 @@ div.cards {
             img {
               height: $card_img_height;
               width: $card_width;
+              margin-bottom:1.5rem;
               &:hover {
                 border: 3px solid $blue_color;
               }

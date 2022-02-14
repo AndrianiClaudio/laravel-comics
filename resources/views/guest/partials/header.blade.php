@@ -28,11 +28,18 @@
         </div>
         <nav class="navbar">
           <ul>
+            @php
+                $last = last(config('header.header_bottom.navbar.item'));
+            @endphp
             @foreach (config('header.header_bottom.navbar.item') as $item)
-                <li class="{{$item === Route::currentRouteName() ? 'active' : ''}}">
+                <li class="list-item {{$item === Route::currentRouteName() ? 'active' : ''}}">
                   <a href="{{route($item)}}">
                     {{$item}}
                   </a>
+
+                  @if ($item === $last)
+                  <i class="fa-solid fa-sort-down"></i>
+                  @endif
                 </li>
             @endforeach
           </ul>

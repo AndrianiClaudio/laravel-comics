@@ -102,11 +102,15 @@ header.header .header-bottom .container .container-content .navbar ul {
   gap: 3rem;
 }
 
-header.header .header-bottom .container .container-content .navbar ul li {
+header.header .header-bottom .container .container-content .navbar ul .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   height: 110px;
 }
 
-header.header .header-bottom .container .container-content .navbar ul li a {
+header.header .header-bottom .container .container-content .navbar ul .list-item a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -115,20 +119,18 @@ header.header .header-bottom .container .container-content .navbar ul li a {
   font-weight: bold;
 }
 
-header.header .header-bottom .container .container-content .navbar ul li a i {
+header.header .header-bottom .container .container-content .navbar ul .list-item a:hover {
+  color: #0282f9;
+}
+
+header.header .header-bottom .container .container-content .navbar ul .list-item i {
   color: #0282f9;
   margin-top: -8px;
+  cursor: pointer;
 }
 
-header.header .header-bottom .container .container-content .navbar ul li a:hover {
-  color: #0282f9;
-}
-
-header.header .header-bottom .container .container-content .navbar ul li.active {
+header.header .header-bottom .container .container-content .navbar ul .list-item.active a {
   background: linear-gradient(to bottom, white 95%, #0282f9 5%);
-}
-
-header.header .header-bottom .container .container-content .navbar ul li.active a {
   color: #0282f9;
 }
 
@@ -214,8 +216,9 @@ div.cards .container .container-content .container ul.card li {
 }
 
 div.cards .container .container-content .container ul.card li img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 1.5rem;
 }
 
 div.cards .container .container-content .container ul.card li img:hover {
@@ -223,7 +226,7 @@ div.cards .container .container-content .container ul.card li img:hover {
 }
 
 div.cards .container .container-content .container ul.card li h2 {
-  width: 200px;
+  width: 150px;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
