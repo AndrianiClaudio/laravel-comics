@@ -1,6 +1,7 @@
 <div class="sub-card-container">
   <div class="container">
     <div class="container-content">
+      {{-- talent --}}
       <section>
         <h2>Talent</h2>
         <ul class="list">
@@ -32,6 +33,7 @@
           </li>
         </ul>
       </section>
+      {{-- specs --}}
       <section>
         <h2>Specs</h2>
         <ul class="list">
@@ -55,7 +57,11 @@
             <span class='title-txt'>On Sale Date: </span>
             <div class="item-txt">
               <span>
-                {{$card['sale_date']}}
+                @php
+                $date = new DateTime($card['sale_date']);
+                @endphp
+
+                {{$date->format('M d Y')}}
               </span>
             </div>
           </li>
