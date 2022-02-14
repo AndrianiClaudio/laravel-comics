@@ -216,8 +216,8 @@ div.cards .container .container-content .container ul.card li {
 }
 
 div.cards .container .container-content .container ul.card li img {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   margin-bottom: 1.5rem;
 }
 
@@ -226,7 +226,7 @@ div.cards .container .container-content .container ul.card li img:hover {
 }
 
 div.cards .container .container-content .container ul.card li h2 {
-  width: 150px;
+  width: 175px;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
@@ -260,7 +260,7 @@ div.cards .container button.btn:hover {
 
 [class^=card-] .container .container-content {
   position: relative;
-  width: 60%;
+  width: 50%;
   gap: 2.5rem;
 }
 
@@ -321,8 +321,7 @@ div.cards .container button.btn:hover {
   margin-top: 1rem;
   color: #817273;
   font-weight: 500;
-  font-size: 0.95rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
 }
 
 [class^=card-] .container .container-content .adv {
@@ -337,6 +336,31 @@ div.cards .container button.btn:hover {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.7rem;
+}
+
+.sub-card-container {
+  background-color: #f6f6f6;
+}
+
+.sub-card-container .container {
+  border-top: 1px solid lightgrey;
+}
+
+.sub-card-container .container .container-content {
+  width: 50%;
+}
+
+.sub-card-container .container .container-content section {
+  width: 50%;
+  margin-top: 1.5rem;
+}
+
+.sub-card-container .container .container-content section h2 {
+  color: #003f5e;
+}
+
+.sub-card-container .container .container-content section .list-item a {
+  color: #0282f9;
 }
 
 .container-blue {

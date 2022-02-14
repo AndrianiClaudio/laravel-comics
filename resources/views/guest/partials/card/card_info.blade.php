@@ -14,6 +14,5 @@
   @include('guest.layout.card')
 @endsection
 @section('sub_content')
-
-  {{-- @include('guest.layout.sub_content') --}}
+  @include('guest.layout.card_sub')
 @endsection
