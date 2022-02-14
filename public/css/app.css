@@ -347,7 +347,9 @@ div.cards .container button.btn:hover {
 }
 
 .sub-card-container .container .container-content {
+  align-items: flex-start;
   width: 50%;
+  gap: 2.5rem;
 }
 
 .sub-card-container .container .container-content section {
@@ -357,9 +359,33 @@ div.cards .container button.btn:hover {
 
 .sub-card-container .container .container-content section h2 {
   color: #003f5e;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
 }
 
-.sub-card-container .container .container-content section .list-item a {
+.sub-card-container .container .container-content section .list {
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.sub-card-container .container .container-content section .list .list-item {
+  display: flex;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sub-card-container .container .container-content section .list .list-item .title-txt {
+  display: block;
+  color: #003f5e;
+  width: 35%;
+}
+
+.sub-card-container .container .container-content section .list .list-item .item-txt {
+  width: 65%;
+}
+
+.sub-card-container .container .container-content section .list .list-item .item-txt a {
   color: #0282f9;
 }
 
