@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guest.home',['data' => config('comics')]);
 })-> name('home');
-Route::get('/card/{id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {
     $data = collect(config(('comics')));
     $card = [];
     foreach ($data as $value) {
