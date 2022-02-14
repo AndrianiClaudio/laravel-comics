@@ -7,21 +7,18 @@ Route::get('/', function () {
 })-> name('home');
 Route::get('/card/{id}', function ($id) {
     $data = collect(config(('comics')));
-    // $data->where('id' === $id);
-    // @dd($data);
     $card = [];
     foreach ($data as $value) {
-        // @dd($value['id'],$id);
         if($value['id'] === intval($id)) {
-            // @dd($id);
             $card [] = $value;
         }   
     }
-
-    
-    // @dd($card);
-
-    return view('guest.card_info',['card' => $card]);
+    $singleCard = [];
+    foreach($card as $c) {
+        $singleCard = $c;
+    }
+    // @dd($singleCard);
+    return view('guest.card_info',['card' => $singleCard]);
 })-> name('card');
 
 // rotte navbar

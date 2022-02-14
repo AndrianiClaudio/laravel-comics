@@ -7,13 +7,9 @@
 {{-- content --}}
 @section('main_content')
 @section('absolute')
-<div class="container">
-  <div class="container-content">
-    <div class="current-series">
-      <b>current-series</b>
-    </div>
+  <div class="current-series">
+    <img src="{{$card['thumb']}}" alt="">
   </div>
-</div>
 @endsection
   @include('guest.layout.card')
 @endsection

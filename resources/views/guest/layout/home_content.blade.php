@@ -8,7 +8,7 @@
           <ul class="card">
             {{-- immagine --}}
             <li>
-              <a href="{{route('card')}}">
+              <a href="{{route('card',$card['id'])}}">
                 <img src="{{$card['thumb']}}" alt="{{$card['title']}}" title="{{$card['title']}}">
                 {{-- titolo --}}
                 <h2 class="title">
