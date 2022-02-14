@@ -398,35 +398,53 @@ div.cards .container button.btn:hover {
 
 .sub-card-container .container .link-bar .container .list {
   display: flex;
+  width: 100%;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
   height: 100px;
+  width: 25%;
+  border-right: 1px solid lightgrey;
+}
+
+.sub-card-container .container .link-bar .container .list .list-item:first-child {
+  border-left: 1px solid lightgrey;
+}
+
+.sub-card-container .container .link-bar .container .list .list-item .align-start {
+  align-self: flex-start;
+  color: #5e5e5ebd;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-dc {
   width: 37px;
-  height: 37px;
+  height: 36px;
+  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 0 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-shop-dc {
   width: 37px;
-  height: 37px;
+  height: 36px;
+  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 37px 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-locator {
   width: 37px;
-  height: 37px;
+  height: 36px;
+  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 74px 0;
 }
 
 .sub-card-container .container .link-bar .container .list .list-item .icon-subscriptions {
   width: 37px;
-  height: 37px;
+  height: 36px;
+  transform: scale(1.5);
   background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 111px 0;
 }
 

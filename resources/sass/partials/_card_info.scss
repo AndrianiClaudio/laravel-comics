@@ -118,28 +118,44 @@
         width: 50%;
         .list {
           display: flex;
+          width: 100%;
           .list-item {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
             height: 100px;
+            width: 25%;
+            border-right: 1px solid lightgrey;
+            &:first-child {
+              border-left: 1px solid lightgrey;
+            }
+            .align-start {
+              align-self: flex-start;
+              color: $grey_color;
+            }
             .icon-dc {
               width: 37px;
-              height: 37px;
+              height: 36px;
+              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') 0 0;
             }
             .icon-shop-dc {
               width: 37px;
-              height: 37px;
+              height: 36px;
+              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 1) 0;
             }
             .icon-locator {
               width: 37px;
-              height: 37px;
+              height: 36px;
+              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 2) 0;
             }
             .icon-subscriptions {
               width: 37px;
-              height: 37px;
+              height: 36px;
+              transform: scale(1.5);
               background: url('../../../public/img/cta-icons.png') calc(37px * 3) 0;
             }
           }

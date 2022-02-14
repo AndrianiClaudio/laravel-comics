@@ -67,19 +67,19 @@
       <div class="container">
         <ul class="list">
           <li class="list-item">
-            <b>DIGITAL COMICS</b>
+            <b class="align-start">DIGITAL COMICS</b>
             <img src="{{asset('img/transparent.png')}}" alt="Digital Comics" class="icon-dc">
           </li>
           <li class="list-item">
-            <b>SHOP DC</b>
+            <b class="align-start">SHOP DC</b>
             <img src="{{asset('img/transparent.png')}}" alt="Shop DC" class="icon-shop-dc">
           </li>
           <li class="list-item">
-            <b>COMIC SHOP LOCATOR</b>
+            <b class="align-start">COMIC SHOP LOCATOR</b>
             <img src="{{asset('img/transparent.png')}}" alt="Comic Shop Locator" class="icon-locator">
           </li>
           <li class="list-item">
-            <b>SUBSCRIPTIONS</b>
+            <b class="align-start">SUBSCRIPTIONS</b>
             <img src="{{asset('img/transparent.png')}}" alt="Subscriptions" class="icon-subscriptions">
           </li>
         </ul>
